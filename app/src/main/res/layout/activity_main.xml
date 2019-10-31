@@ -4,23 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:padding="8dp"
     android:background="@drawable/background"
-    tools:context=".MainActivity">
+    tools:context=".views.MainActivity">
 
     <TextView
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginTop="8dp"
         android:textSize="24sp"
         android:padding="15dp"
         android:fontFamily="serif-monospace"
         android:textColor="@color/colorWrite"
         android:background="@drawable/title_background"
-        android:text="@string/tempo_de_namoro" />
+        android:text="@string/tempo_juntos" />
 
     <TextView
         android:id="@+id/current_time"
@@ -32,6 +30,27 @@
         android:layout_marginTop="190dp"
         android:textColor="@color/colorBlue"
         android:text="1 Ano, 1 mês e 15 dias"/>
+
+    <TextView
+        android:id="@+id/text_desde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="25dp"
+        android:layout_below="@+id/current_time"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/colorBlue"
+        android:text="Dede de:"/>
+    <TextView
+        android:id="@+id/text_begin_dating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="25dp"
+        android:layout_below="@+id/text_desde"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/colorBlue"
+        android:text="01/01/2019"/>
 
     <Button
         android:id="@+id/button_next_birthday"

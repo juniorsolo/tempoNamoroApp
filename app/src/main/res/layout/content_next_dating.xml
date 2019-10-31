@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@drawable/background_heart_ballon"
+    tools:context=".views.NextDatingActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:padding="15dp"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/colorWrite"
+        android:background="@drawable/title_background"
+        android:text="@string/proximo_aniversario" />
+    <TextView
+        android:id="@+id/text_infoBirthday"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="240dp"
+        android:textSize="23sp"
+        android:textAlignment="center"
+        android:textColor="#0C7BA8"
+        android:text="Nosso próximo aniversário será daqui:"/>
+    <TextView
+        android:id="@+id/text_nextBirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_infoBirthday"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:textColor="#0C7BA8"
+        android:text=" 11 meses e 10 dias."/>
+
+    <TextView
+        android:id="@+id/text_no_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_nextBirthday"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:textColor="#0C7BA8"
+        android:text="No dia:"/>
+    <TextView
+        android:id="@+id/text_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_no_dia"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="4dp"
+        android:textSize="20sp"
+        android:textColor="#0C7BA8"
+        android:text="01/01/2019"/>
+
+    <TextView
+        android:id="@+id/text_obs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="20sp"
+        android:textColor="#0C7BA8"
+        android:text="Obs: asdfdsasdfsasdfa"/>
+
+</RelativeLayout>
