@@ -6,6 +6,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.junior.tempodenamoro.R;
 import com.junior.tempodenamoro.util.ExtractTimeFromPeriod;
+import com.junior.tempodenamoro.util.GeneratePhrases;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -31,12 +32,20 @@ public class NextDatingActivity extends AppCompatActivity {
 
         mViewHolder.nextBirthday = findViewById(R.id.text_nextBirthday);
         mViewHolder.noDia = findViewById(R.id.text_dia);
+        mViewHolder.obs = findViewById(R.id.text_obs);
+
+        //this.writePhrase();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         this.timeDownNextBirthday();
+        this.writePhrase();
+    }
+
+    private void writePhrase(){
+        mViewHolder.obs.setText(GeneratePhrases.Generate());
     }
 
     private void timeDownNextBirthday(){
@@ -61,6 +70,7 @@ public class NextDatingActivity extends AppCompatActivity {
     private static class ViewHolder{
         TextView nextBirthday;
         TextView noDia;
+        TextView obs;
     }
 
 }

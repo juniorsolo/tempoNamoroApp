@@ -27,7 +27,7 @@
         android:layout_centerInParent="true"
         android:textSize="30dp"
         android:layout_below="@+id/title"
-        android:layout_marginTop="190dp"
+        android:layout_marginTop="150dp"
         android:textColor="@color/colorBlue"
         android:text="1 Ano, 1 mês e 15 dias"/>
 

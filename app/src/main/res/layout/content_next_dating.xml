@@ -9,7 +9,7 @@
     tools:context=".views.NextDatingActivity">
 
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/text_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -23,7 +23,7 @@
         android:id="@+id/text_infoBirthday"
         android:layout_width="310dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/title"
+        android:layout_below="@+id/text_title"
         android:layout_centerInParent="true"
         android:layout_marginTop="240dp"
         android:textSize="23sp"
@@ -67,8 +67,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:textSize="18sp"
+        android:textAlignment="center"
         android:textColor="#0C7BA8"
-        android:text="Obs: asdfdsasdfsasdfa"/>
+        android:text="Você começou a me amar, no dia que comeu do meu risoto kkkk"/>
 
 </RelativeLayout>

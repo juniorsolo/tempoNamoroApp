@@ -14,10 +14,13 @@ import com.junior.tempodenamoro.util.ExtractTimeFromPeriod;
 import java.time.LocalDate;
 import java.time.Month;
 import java.time.Period;
+import java.time.format.DateTimeFormatter;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private ViewHolder mViewHolder = new ViewHolder();
+    private LocalDate dateDating = LocalDate.of(2017, Month.OCTOBER, 20);
+    private DateTimeFormatter dtformatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +29,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         this.mViewHolder.textCurrentTime = findViewById(R.id.current_time);
         this.mViewHolder.buttonNextBirthday = findViewById(R.id.button_next_birthday);
+        this.mViewHolder.dateBeginDating = findViewById(R.id.text_begin_dating);
         this.mViewHolder.buttonNextBirthday.setOnClickListener(this);
         this.mViewHolder.textCurrentTime.setText( this.findTimeDating() + " juntos..." );
+        this.mViewHolder.dateBeginDating.setText(dtformatter.format(dateDating));
 
     }
     @Override
@@ -38,7 +43,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
     private String findTimeDating() {
-        LocalDate dateDating = LocalDate.of(2017, Month.OCTOBER, 20);
         LocalDate today = LocalDate.now();
         Period period = Period.between(dateDating, today);
         return ExtractTimeFromPeriod.extract(period);
@@ -47,5 +51,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private static class ViewHolder{
         TextView textCurrentTime;
         Button buttonNextBirthday;
+        TextView dateBeginDating;
     }
 }
