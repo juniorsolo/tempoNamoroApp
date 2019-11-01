@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="8dp"
     android:background="@drawable/background_heart_ballon"
-    tools:context=".views.NextDatingActivity">
+    tools:context=".views.NextBirthdayActivity">
 
     <TextView
         android:id="@+id/text_title"
@@ -25,10 +25,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/text_title"
         android:layout_centerInParent="true"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="214dp"
         android:textSize="23sp"
         android:textAlignment="center"
-        android:textColor="#0C7BA8"
+        android:textColor="@color/text_blue"
         android:text="Nosso próximo aniversário será daqui:"/>
     <TextView
         android:id="@+id/text_nextBirthday"
@@ -38,7 +38,7 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="10dp"
         android:textSize="30sp"
-        android:textColor="#0C7BA8"
+        android:textColor="@color/text_blue"
         android:text=" 11 meses e 10 dias."/>
 
     <TextView
@@ -49,7 +49,7 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="40dp"
         android:textSize="20sp"
-        android:textColor="#0C7BA8"
+        android:textColor="@color/text_blue"
         android:text="No dia:"/>
     <TextView
         android:id="@+id/text_dia"
@@ -59,7 +59,7 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="4dp"
         android:textSize="20sp"
-        android:textColor="#0C7BA8"
+        android:textColor="@color/text_blue"
         android:text="01/01/2019"/>
 
     <TextView
@@ -69,8 +69,9 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="10dp"
         android:textSize="18sp"
+        android:layout_centerInParent="true"
         android:textAlignment="center"
-        android:textColor="#0C7BA8"
+        android:textColor="@color/text_obs"
         android:text="Você começou a me amar, no dia que comeu do meu risoto kkkk"/>
 
 </RelativeLayout>

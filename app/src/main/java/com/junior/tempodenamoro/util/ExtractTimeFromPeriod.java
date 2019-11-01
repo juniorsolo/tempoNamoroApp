@@ -12,11 +12,16 @@ public class ExtractTimeFromPeriod {
                 sb.append(years);
             }
             if (period.getMonths() > 0) {
-                String months = period.getMonths() > 1 ? period.getMonths() + " meses e " : period.getMonths() + " mês e ";
+                String months = period.getMonths() > 1 ? period.getMonths() + " meses" : period.getMonths() + " mês";
                 sb.append(months);
             }
+
+            if(period.getMonths() > 0 && period.getDays() > 0){
+                sb.append(" e ");
+            }
+
             if(period.getDays() > 0) {
-                String days = period.getDays() > 1 ? period.getDays() + " dias " : period.getDays() + " dia";
+                String days = period.getDays() > 1 ?  period.getDays() + " dias " :  period.getDays() + " dia";
                 sb.append(days);
             }
 

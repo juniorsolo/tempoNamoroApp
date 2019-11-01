@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         if(v.getId() == R.id.button_next_birthday){
-            Intent intentNextBirthday = new Intent(this,NextDatingActivity.class);
+            Intent intentNextBirthday = new Intent(this,NextBirthdayActivity.class);
             startActivity(intentNextBirthday);
         }
     }
